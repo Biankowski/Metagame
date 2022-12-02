@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <UseWindowsForms>true</UseWindowsForms>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="icons8-ace-of-clubs-50.png" />
+    <None Remove="icons8-chip-50.png" />
+    <None Remove="metagame_nome-removebg-preview.png" />
+    <None Remove="settings-21-512.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Resources\Images\icons8-ace-of-clubs-50.png" />
+    <Resource Include="Resources\Images\icons8-chip-50.png" />
+    <Resource Include="Resources\Images\Metagame logo-fococlipping-standard.png" />
+    <Resource Include="Resources\Images\metagame_nome-removebg-preview.png" />
+    <Resource Include="Resources\Images\settings-21-512.png" />
+  </ItemGroup>
+
+</Project>

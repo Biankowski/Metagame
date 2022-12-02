@@ -1,0 +1,22 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:viewmodel="clr-namespace:MetaGame.ViewModel"
+                    xmlns:views="clr-namespace:MetaGame.Views">
+
+    <DataTemplate DataType="{x:Type viewmodel:HomeViewModel}">
+        <views:HomeView/>
+    </DataTemplate>
+
+    <DataTemplate DataType="{x:Type viewmodel:SettingsViewModel}">
+        <views:SettingsView/>
+    </DataTemplate>
+
+    <DataTemplate DataType="{x:Type viewmodel:UpdateSheetViewModel}">
+        <views:UpdateSheetView/>
+    </DataTemplate>
+
+    <DataTemplate DataType="{x:Type viewmodel:UploadHandsViewModel}">
+        <views:UploadHandsView/>
+    </DataTemplate>
+    
+</ResourceDictionary>
