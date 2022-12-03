@@ -12,18 +12,23 @@
         <viewmodel:HomeViewModel/>
     </UserControl.DataContext>
 
-    <Grid Background="White">
-        <Button Content="Connect" 
-                HorizontalAlignment="Left"
-                Margin="10,86,0,0" 
-                VerticalAlignment="Top"
-                Height="47" 
-                Width="117">
+    <Grid Background="#FFECECEC">
+        <Rectangle x:Name="rect_White" HorizontalAlignment="Center" Height="132" VerticalAlignment="Center" Width="586" Fill="White" RadiusX="18.805" RadiusY="18.805"/>
+        <Button x:Name="btn_Connect" Content="Connect" 
+                HorizontalAlignment="Center" 
+                VerticalAlignment="Center"
+                Height="48" 
+                Width="116" FontWeight="Bold" BorderBrush="{x:Null}" Background="#FF7C2C44" Foreground="White" Click="Button_Click" Cursor="Hand">
             <Button.Resources>
                 <Style TargetType="Border">
                     <Setter Property="CornerRadius" Value="10"/>
                 </Style>
             </Button.Resources>
         </Button>
+        <Ellipse x:Name="elipse_Status" HorizontalAlignment="Left" Height="8" Margin="41,26,0,0" VerticalAlignment="Top" Width="8" Fill="#FFD40404"/>
+        <Label x:Name="lbl_Status" Content="Offline" HorizontalAlignment="Left" Margin="49,16,0,0" VerticalAlignment="Top" Foreground="#FFC80C0C" FontWeight="Bold"/>
+        <TextBlock x:Name="lbl_Text" HorizontalAlignment="Center" Height="24" Margin="0,252,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="116" FontWeight="Bold"><Run Language="pt-br" Text="  "/><Run Text="Click to connect!"/></TextBlock>
+        <TextBlock x:Name="txtBlock_WelcomeMessage" HorizontalAlignment="Center" Height="116" Margin="0,42,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="586" Foreground="#FF7C2C44" FontSize="22" FontWeight="Bold" Visibility="Hidden"><Run Language="pt-br" Text="Welcome To Metagame's Automation Software!"/></TextBlock>
+
     </Grid>
 </UserControl>

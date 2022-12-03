@@ -5,8 +5,27 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:MetaGame.Views"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
-            
+             d:DesignHeight="450" d:DesignWidth="800"
+             Style="{StaticResource PageStyle}">
+    <Grid Background="#FFECECEC" Margin="0,0,0,-100">
+        <Rectangle HorizontalAlignment="Left" Height="79" Margin="235,50,0,0" VerticalAlignment="Top" Width="483" RadiusX="12.823" RadiusY="12.823" Fill="White"/>
+        <Label Content="Spreadsheet Id:" HorizontalAlignment="Left" Height="33" Margin="235,76,0,0" VerticalAlignment="Top" Width="97" FontWeight="Bold"/>
+        <TextBox HorizontalAlignment="Left" Height="25" Margin="364,76,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="338" Background="White" BorderBrush="Black"/>
+        <Rectangle HorizontalAlignment="Left" Height="79" Margin="235,154,0,0" VerticalAlignment="Top" Width="484" RadiusX="12.823" RadiusY="12.823" Fill="White"/>
+        <Label Content="Google Drive Id:" HorizontalAlignment="Left" Height="33" Margin="235,177,0,0" VerticalAlignment="Top" Width="110" FontWeight="Bold"/>
+        <TextBox HorizontalAlignment="Left" Height="25" Margin="364,177,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="338" Background="White" BorderBrush="Black"/>
+        <Rectangle HorizontalAlignment="Left" Height="79" Margin="235,368,0,0" VerticalAlignment="Top" Width="484" RadiusX="12.823" RadiusY="12.823" Fill="White"/>
+        <Label Content="PokerStars HH Path:" HorizontalAlignment="Left" Height="33" Margin="235,394,0,0" VerticalAlignment="Top" Width="132" FontWeight="Bold"/>
+        <TextBox HorizontalAlignment="Left" Height="25" Margin="364,394,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="338" Background="White" BorderBrush="Black"/>
+        <TextBlock HorizontalAlignment="Left" Height="40" Margin="422,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="176" FontWeight="Bold" FontSize="22" Foreground="#FF4C041C" Text="Google Services"/>
+        <TextBlock HorizontalAlignment="Left" Height="40" Margin="422,328,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="154" FontWeight="Bold" FontSize="22" Foreground="#FF4C041C"><Run Text="Local"/><Run Text=" Services"/></TextBlock>
+        <Button Content="Save" HorizontalAlignment="Left" Height="57" Margin="422,463,0,0" VerticalAlignment="Top" Width="154" Foreground="White" Background="#FF7C2C44" BorderBrush="{x:Null}" FontWeight="Bold" Cursor="Hand">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
     </Grid>
 </UserControl>

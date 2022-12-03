@@ -11,7 +11,7 @@
     <Window.DataContext>
         <viewmodel:NavigationViewModel/>
     </Window.DataContext>
-    
+
     <Grid>
         <Border Background="#4c041c"
                 CornerRadius="20" />
@@ -23,16 +23,30 @@
             </Grid.ColumnDefinitions>
 
             <Grid HorizontalAlignment="Left"
-                  Width="228">
+                  Width="300">
                 <Border Background="#4c041c"
-                        CornerRadius="20,0,0,20"/>
+                        CornerRadius="20,0,0,20" Height="600" VerticalAlignment="Bottom">
+                    <Rectangle HorizontalAlignment="Center" Height="5" Margin="0,79,0,0" VerticalAlignment="Top" Width="300" Fill="White"/>
+                </Border>
+                <Grid Height="600"
+                            Width="300">
+                    <Image Source="/Resources/Images/Metagame logo-fococlipping-standard.png" Width="55" HorizontalAlignment="Left" Margin="8,14,0,536"/>
+                    <Image Source="/Resources/Images/metagame_nome-removebg-preview.png" Margin="60,7,10,530"/>
+                </Grid>
+            </Grid>
+            <Grid HorizontalAlignment="Left"
+                  Width="228">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="59*"/>
+                    <ColumnDefinition Width="55*"/>
+                </Grid.ColumnDefinitions>
 
-                <StackPanel Height="600"
-                            Width="228">
+                <StackPanel Height="300"
+                            Width="228" Grid.ColumnSpan="3" Margin="0,30,0,150">
 
                     <menu:CustomButtonControl Style="{StaticResource ButtonSyle}"
                                           Command="{Binding HomeCommand}"
-                                          IsChecked="True">
+                                          IsChecked="True" Cursor="Hand">
                         <Grid>
                             <Image Source="/Resources/Images/icons8-ace-of-clubs-50.png" 
                                Style="{StaticResource ImageStyle}"/>
@@ -45,7 +59,7 @@
 
                     <menu:CustomButtonControl Style="{StaticResource ButtonSyle}"
                                           Command="{Binding UpdateSheetCommand}"
-                                          IsChecked="True">
+                                          IsChecked="True" Cursor="Hand">
                         <Grid>
                             <Image Source="/Resources/Images/icons8-chip-50.png"
                                Style="{StaticResource ImageStyle}"/>
@@ -57,17 +71,20 @@
 
                     <menu:CustomButtonControl Style="{StaticResource ButtonSyle}"
                                               Command="{Binding UploadHandsCommand}"
-                                              IsChecked="True">
+                                              IsChecked="True" Cursor="Hand">
                         <Grid>
-                            <Image Source="/Resources/Images/text-file-512.png"
+                            <Image Source="/Resources/Images/report-3-48.png"
                                    Style="{StaticResource ImageStyle}"/>
                             <TextBlock Text="Upload Hands"
                                        Style="{StaticResource TextStyle}"/>
                         </Grid>
                     </menu:CustomButtonControl>
+                </StackPanel>
+
+                <StackPanel VerticalAlignment="Bottom" Grid.ColumnSpan="2" >
                     <menu:CustomButtonControl Style="{StaticResource ButtonSyle}"
                                               Command="{Binding SettingsCommand}"
-                                              IsChecked="True">
+                                              IsChecked="True" Cursor="Hand">
                         <Grid>
                             <Image Source="/Resources/Images/settings-21-512.png"
                                    Style="{StaticResource ImageStyle}"/>
@@ -84,5 +101,4 @@
             </Grid>
         </Grid>
     </Grid>
-    
 </Window>

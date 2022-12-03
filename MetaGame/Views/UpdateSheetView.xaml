@@ -5,8 +5,28 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:MetaGame.Views"
              mc:Ignorable="d" 
-             d:DesignHeight="450" d:DesignWidth="800">
-    <Grid>
-            
+             d:DesignHeight="450" d:DesignWidth="800"
+             Style="{StaticResource PageStyle}">
+    <Grid Background="#FFECECEC" Margin="0,0,-102,-93">
+        <Rectangle HorizontalAlignment="Left" Height="80" Margin="216,46,0,0" VerticalAlignment="Top" Width="485" RadiusX="12.823" RadiusY="12.823" Fill="White"/>
+        <Label Content="PokerStars Screenshot:" HorizontalAlignment="Left" Height="32" Margin="216,70,0,0" VerticalAlignment="Top" Width="139" FontWeight="Bold"/>
+        <TextBox HorizontalAlignment="Left" Height="24" Margin="360,70,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="323" Background="White" BorderBrush="Black"/>
+        <Rectangle HorizontalAlignment="Left" Height="78" Margin="216,138,0,0" VerticalAlignment="Top" Width="485" RadiusX="12.823" RadiusY="12.823" Fill="White"/>
+        <Label Content="Bodog ScreenShot:" HorizontalAlignment="Left" Height="34" Margin="216,160,0,0" VerticalAlignment="Top" Width="124" FontWeight="Bold"/>
+        <TextBox HorizontalAlignment="Left" Height="26" Margin="360,160,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="323" Background="White" BorderBrush="Black"/>
+        <Rectangle HorizontalAlignment="Left" Height="80" Margin="216,224,0,0" VerticalAlignment="Top" Width="485" RadiusX="12.823" RadiusY="12.823" Fill="White"/>
+        <Label Content="Graph ScreenShot:" HorizontalAlignment="Left" Height="32" Margin="216,248,0,0" VerticalAlignment="Top" Width="124" FontWeight="Bold"/>
+        <TextBox HorizontalAlignment="Left" Height="24" Margin="360,248,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="323" Background="White" BorderBrush="Black"/>
+        <TextBlock HorizontalAlignment="Left" Height="40" Margin="402,10,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="135" FontWeight="Bold" FontSize="22" Foreground="#FF4C041C"><Run Language="pt-br" Text="Image Input"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" Height="40" Margin="402,330,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="149" FontWeight="Bold" FontSize="22" Foreground="#FF4C041C"><Run Language="pt-br" Text="Manual Input"/></TextBlock>
+        <Button Content="Send" HorizontalAlignment="Left" Height="57" Margin="392,461,0,0" VerticalAlignment="Top" Width="154" Foreground="White" Background="#FF7C2C44" BorderBrush="{x:Null}" FontWeight="Bold" Cursor="Hand">
+            <Button.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+
     </Grid>
 </UserControl>

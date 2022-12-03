@@ -24,5 +24,18 @@ namespace MetaGame.Views
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            lbl_Status.Foreground = Brushes.Green;
+            lbl_Status.Content = "Online";
+            elipse_Status.Fill = Brushes.Green;
+
+            rect_White.Fill = Brushes.Transparent;
+            btn_Connect.Visibility = Visibility.Hidden;
+            lbl_Text.Visibility = Visibility.Hidden;
+
+            txtBlock_WelcomeMessage.Visibility = Visibility.Visible;
+        }
     }
 }
